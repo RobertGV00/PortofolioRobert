@@ -32,7 +32,7 @@
         h2 {
             color: #58a6ff;
         }
-        p {
+        p, ul {
             line-height: 1.6;
         }
         .footer {
@@ -40,6 +40,25 @@
             font-size: 0.9em;
             padding: 20px;
             color: #8b949e;
+        }
+        .project-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            padding: 16px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #2ea043;
         }
     </style>
 </head>
@@ -50,56 +69,80 @@
     </header>
     <main>
         <section>
+            <h2>Sobre mí</h2>
+            <p>
+                Soy un desarrollador con experiencia en automatización, desarrollo móvil, administración de sistemas y redes. Me apasiona construir soluciones eficientes, tanto a nivel de software como en infraestructura. Actualmente, estoy cursando estudios de grado superior en Desarrollo de aplicaciones multiplataforma y al acabar esto cursare estudios universitarios en Ciencias de la Computación con especialización en Inteligencia Artificial en Estados Unidos.
+            </p>
+            <a href="CV_Robert George Vorobchevici.pdf" class="button" download>Descargar CV</a>
+        </section>
+
+        <section>
             <h2>1. Automatización de tareas con Python</h2>
             <p>
                 ¿Tienes tareas repetitivas con Excel, bases de datos o archivos? Yo las automatizo por ti. Desarrollo scripts personalizados en Python que:
-                <ul>
-                    <li>Limpian, transforman y comparan datos en Excel.</li>
-                    <li>Automatizan informes, backups o envío de mensajes (WhatsApp, Telegram...).</li>
-                    <li>Conectan con APIs o servicios externos.</li>
-                </ul>
-                Soluciones rápidas, eficientes y adaptadas a tu negocio.
             </p>
+            <ul>
+                <li>Limpian, transforman y comparan datos en Excel.</li>
+                <li>Automatizan informes, backups o envío de mensajes (WhatsApp, Telegram...).</li>
+                <li>Conectan con APIs o servicios externos.</li>
+            </ul>
+            <p>Soluciones rápidas, eficientes y adaptadas a tu negocio.</p>
         </section>
 
         <section>
             <h2>2. Desarrollo de Apps Android con Jetpack Compose</h2>
             <p>
                 Si necesitas una aplicación moderna, fluida y bien estructurada para Android, puedo ayudarte. Desarrollaré tu app con:
-                <ul>
-                    <li>Jetpack Compose y arquitectura MVVM.</li>
-                    <li>Base de datos local con Room o SQLite.</li>
-                    <li>Opcional: conexión a APIs externas, pantalla de login, contenido multimedia, etc.</li>
-                </ul>
-                Ideal para apps educativas, de gestión o ideas innovadoras.
             </p>
+            <ul>
+                <li>Jetpack Compose y arquitectura MVVM.</li>
+                <li>Base de datos local con Room o SQLite.</li>
+                <li>Opcional: conexión a APIs externas, pantalla de login, contenido multimedia, etc.</li>
+            </ul>
+            <p>Ideal para apps educativas, de gestión o ideas innovadoras.</p>
         </section>
 
         <section>
             <h2>3. Mantenimiento y reparación de PCs</h2>
             <p>
                 Ofrezco servicios técnicos para equipos informáticos:
-                <ul>
-                    <li>Formateo, instalación de sistemas y drivers.</li>
-                    <li>Optimización y limpieza de virus/malware.</li>
-                    <li>Cambio de discos, RAM, pasta térmica, etc.</li>
-                    <li>Diagnóstico completo y asesoramiento.</li>
-                </ul>
-                Servicio local (a domicilio o en punto de recogida). Consulta sin compromiso.
             </p>
+            <ul>
+                <li>Formateo, instalación de sistemas y drivers.</li>
+                <li>Optimización y limpieza de virus/malware.</li>
+                <li>Cambio de discos, RAM, pasta térmica, etc.</li>
+                <li>Diagnóstico completo y asesoramiento.</li>
+            </ul>
+            <p>Servicio local (a domicilio o en punto de recogida). Consulta sin compromiso.</p>
         </section>
 
         <section>
             <h2>4. Configuración de servidores y redes para pymes</h2>
             <p>
                 ¿Montando una infraestructura empresarial? Te ayudo con:
-                <ul>
-                    <li>Instalación de Windows Server y configuración de Active Directory.</li>
-                    <li>Publicación de aplicaciones vía Citrix.</li>
-                    <li>Montaje de red interna con NAS, backups automáticos, y seguridad física.</li>
-                </ul>
-                Todo documentado y adaptado a normativas ISO si lo necesitas.
             </p>
+            <ul>
+                <li>Instalación de Windows Server y configuración de Active Directory.</li>
+                <li>Publicación de aplicaciones como Mastercam vía Citrix.</li>
+                <li>Montaje de red interna con NAS, backups automáticos, y seguridad física.</li>
+            </ul>
+            <p>Todo documentado y adaptado a normativas ISO si lo necesitas.</p>
+        </section>
+
+        <section>
+            <h2>Proyectos destacados</h2>
+            <div class="project-card">
+                <h3>🎸 AppGuitarra</h3>
+                <p>Aplicación educativa para aprender guitarra con secciones interactivas, sonidos, teoría musical y sistema de progreso. Desarrollada con Jetpack Compose y SQLite.</p>
+            </div>
+            <div class="project-card">
+                <h3>📊 Script de actualización de citas (Python)</h3>
+                <p>Script que toma nuevos registros desde un Excel y actualiza el historial de citas sin duplicados, útil para automatización en talleres y atención al cliente.</p>
+            </div>
+            <div class="project-card">
+                <h3>🖥️ Infraestructura empresarial con Citrix y Active Directory</h3>
+                <p>Diseño completo de servidor Windows Server en rack con Citrix, Mastercam, IA predictiva y seguridad avanzada. Proyecto orientado a pymes industriales.</p>
+            </div>
         </section>
     </main>
     <div class="footer">
