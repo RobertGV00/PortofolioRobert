@@ -176,8 +176,16 @@
                 <input type="text" name="name" placeholder="Tu nombre" required>
                 <input type="email" name="email" placeholder="Tu correo electrónico" required>
                 <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
-                <input type="submit" value="Enviar mensaje">
-            </form>
+                
+                <!-- Campo oculto para activar reCAPTCHA invisible -->
+                <input type="hidden" name="_captcha" value="true">
+                
+                <!-- Botón con reCAPTCHA -->
+                <button class="g-recaptcha" 
+                        data-sitekey="YOUR_SITE_KEY" 
+                        data-callback='onSubmit' 
+                        data-action='submit'>Enviar mensaje</button>
+</form>
         </section>
         
     </main>
@@ -185,4 +193,11 @@
         <p>Contacto: robertgv2304@gmail.com | GitHub: github.com/RobertGV00</p>
     </div>
 </body>
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+    function onSubmit(token) {
+        document.querySelector('form').submit();
+    }
+</script>
 </html>
