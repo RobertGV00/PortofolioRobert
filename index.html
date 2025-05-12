@@ -60,6 +60,31 @@
         .button:hover {
             background-color: #2ea043;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        input, textarea {
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            color: #c9d1d9;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #58a6ff;
+        }
+        input[type="submit"] {
+            background-color: #238636;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #2ea043;
+        }
     </style>
 </head>
 <body>
@@ -143,6 +168,18 @@
                 <p>Diseño completo de servidor Windows Server en rack con Citrix, Mastercam, IA predictiva y seguridad avanzada. Proyecto orientado a pymes industriales.</p>
             </div>
         </section>
+
+        <section>
+            <h2>Contacto</h2>
+            <p>¿Quieres contratar mis servicios o colaborar en un proyecto? Rellena este formulario y te responderé lo antes posible.</p>
+            <form action="https://formsubmit.co/robertgv2304@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                <input type="submit" value="Enviar mensaje">
+            </form>
+        </section>
+        
     </main>
     <div class="footer">
         <p>Contacto: robertgv2304@gmail.com | GitHub: github.com/RobertGV00</p>
