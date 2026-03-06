@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert George | Technical Portfolio</title>
+    <title>Robert George | Software Portfolio</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,35 +12,53 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #161b22;
             padding: 30px 20px;
             text-align: center;
+            border-bottom: 1px solid #30363d;
         }
+
         header h1 {
             margin: 0;
             font-size: 2.5em;
         }
+
+        header p {
+            margin-top: 10px;
+            color: #8b949e;
+            font-size: 1.1em;
+        }
+
         main {
             padding: 20px;
             max-width: 900px;
             margin: auto;
         }
+
         section {
             margin-bottom: 40px;
         }
+
         h2 {
             color: #58a6ff;
+            margin-bottom: 10px;
         }
+
         p, ul {
             line-height: 1.6;
         }
+
         .footer {
             text-align: center;
             font-size: 0.9em;
             padding: 20px;
             color: #8b949e;
+            border-top: 1px solid #30363d;
+            margin-top: 40px;
         }
+
         .project-card {
             background-color: #161b22;
             border: 1px solid #30363d;
@@ -48,6 +66,7 @@
             margin-bottom: 20px;
             border-radius: 8px;
         }
+
         .button {
             display: inline-block;
             padding: 10px 15px;
@@ -57,14 +76,17 @@
             border-radius: 5px;
             margin-top: 10px;
         }
+
         .button:hover {
             background-color: #2ea043;
         }
+
         form {
             display: flex;
             flex-direction: column;
             gap: 12px;
         }
+
         input, textarea, button {
             background-color: #0d1117;
             border: 1px solid #30363d;
@@ -73,33 +95,40 @@
             border-radius: 5px;
             font-size: 1em;
         }
+
         input:focus, textarea:focus {
             outline: none;
             border-color: #58a6ff;
         }
+
         input[type="submit"], button {
             background-color: #238636;
             color: white;
             cursor: pointer;
         }
+
         input[type="submit"]:hover, button:hover {
             background-color: #2ea043;
         }
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
         }
+
         .skill-box {
             background-color: #161b22;
             border: 1px solid #30363d;
             padding: 16px;
             border-radius: 8px;
         }
+
         .skill-box h3 {
             margin-top: 0;
             color: #58a6ff;
         }
+
         a {
             color: #58a6ff;
         }
@@ -108,19 +137,19 @@
 <body>
     <header>
         <h1>Robert George</h1>
-        <p>Computer Science Student | Software Development | Automation</p>
+        <p>Computer Science Student | Software Development | Automation | Web Development</p>
     </header>
 
     <main>
         <section>
             <h2>About Me</h2>
             <p>
-                I am a Computer Science student with a strong interest in software development, automation, and systems administration. I enjoy building practical projects that solve real-world problems, especially tools that improve workflows and automate repetitive tasks.
+                I am a Computer Science student with a strong interest in software development, automation, web development, and systems. I enjoy building practical projects that solve real-world problems and improve workflows.
             </p>
             <p>
-                I am currently expanding my skills in Python, Android development, databases, and backend-oriented technologies while continuing to learn more about cloud platforms and infrastructure.
+                I have worked on projects involving Python scripting, Android development with Kotlin and Jetpack Compose, web pages built with HTML and CSS, and technical projects related to systems and infrastructure. I am currently continuing to strengthen my skills in backend development, automation, and cloud-related technologies.
             </p>
-            <a href="CV_Robert George Vorobchevici.pdf" class="button" download>Download Resume</a>
+            <a href="Robert_George_Resume.pdf" class="button" download>Download Resume</a>
         </section>
 
         <section>
@@ -135,7 +164,7 @@
                 <li>Learning how to connect scripts with APIs and external services</li>
             </ul>
             <p>
-                My goal is to keep improving my automation and backend development skills through practical projects.
+                These projects help me keep improving my automation and backend development skills through practical experience.
             </p>
         </section>
 
@@ -156,7 +185,23 @@
         </section>
 
         <section>
-            <h2>3. Systems and IT Support</h2>
+            <h2>3. Web Development</h2>
+            <p>
+                I also work with web technologies to build simple, clean, and functional web pages.
+            </p>
+            <ul>
+                <li>Page structure with HTML</li>
+                <li>Styling and responsive layouts with CSS</li>
+                <li>Personal portfolio and presentation websites</li>
+                <li>Foundational front-end development skills</li>
+            </ul>
+            <p>
+                Web development is another area I continue to improve alongside software and automation projects.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Systems and IT Support</h2>
             <p>
                 I also have a technical background in computer systems, troubleshooting, and general IT support from previous training and hands-on experience.
             </p>
@@ -172,7 +217,7 @@
         </section>
 
         <section>
-            <h2>4. Systems and Infrastructure Learning</h2>
+            <h2>5. Systems and Infrastructure Learning</h2>
             <p>
                 I am also interested in server environments, internal infrastructure, and enterprise systems. Through projects and study, I have explored areas such as:
             </p>
@@ -196,6 +241,8 @@
                         <li>Python</li>
                         <li>Kotlin</li>
                         <li>Java</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
                     </ul>
                 </div>
                 <div class="skill-box">
@@ -225,7 +272,7 @@
             <div class="project-card">
                 <h3>🎸 AppGuitarra</h3>
                 <p>
-                    Educational Android application designed to help users learn guitar concepts through interactive sections, music theory content, sounds, and progress tracking.
+                    Educational Android application designed to help users learn guitar concepts through interactive content, music theory, and progress tracking.
                 </p>
                 <p><strong>Technologies:</strong> Kotlin, Jetpack Compose, SQLite</p>
             </div>
@@ -233,9 +280,17 @@
             <div class="project-card">
                 <h3>📊 Appointment History Update Script</h3>
                 <p>
-                    Python script that processes new Excel records and updates appointment history while preventing duplicates. Designed as a practical workflow automation project for small business use.
+                    Python script that processes new Excel records and updates appointment history while preventing duplicate records. Designed as a practical workflow automation project for small business use.
                 </p>
                 <p><strong>Technologies:</strong> Python, Excel data processing</p>
+            </div>
+
+            <div class="project-card">
+                <h3>🌐 Personal Portfolio Website</h3>
+                <p>
+                    Personal website created to present my background, skills, and projects in software development, automation, and systems.
+                </p>
+                <p><strong>Technologies:</strong> HTML, CSS</p>
             </div>
 
             <div class="project-card">
